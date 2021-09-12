@@ -1,0 +1,18 @@
+        <button
+            type="button"
+            id="butonLogin"
+            class="btn btn-secondary btn-sm rounded-pill ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            id="butonSignUp"
+            class="btn btn-secondary btn-sm rounded-pill ms-2"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalSignUp"
+          >
+            Sign-Up
+          </button>

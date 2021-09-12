@@ -1,0 +1,255 @@
+/* About page style */
+
+.container {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+
+.container .box {
+    position:relative;
+    width: 320px;
+    background: #fff;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.1);
+
+}
+
+.container .box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #af9d84;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.container .box:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.container .box h2 {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 2em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.container .box:hover h2 {
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+
+.container .box h3 {
+  position: relative;
+  font-size: 1.5em;
+  z-index: 2;
+  color: #333;
+  transition: 0.5s;
+}
+
+.container .box p {
+  position: relative;
+  z-index: 2;
+  color: #555;
+  transition: 0.5s;
+}
+
+.container .box:hover h3,
+.container .box:hover p 
+{
+ color: #fff;
+}
+
+
+
+/* STYLE FROM travelstyle.html */
+
+main, footer {
+    background: #111;
+  }
+
+  
+  #fitimg {
+    height: 50vh;
+  }
+  
+  
+  .bgimage2 {
+    position: relative;
+    width: 100%;
+    /* min-height: 100vh; */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bgimage2:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+  }
+  
+  .bgimage2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: auto;
+    background: linear-gradient(to bottom, #111, transparent);
+  }
+  
+  .bgimg2 {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+  }
+  
+
+  
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    transform: translate (-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    z-index: 1;
+  }
+  
+  .wrapper h1 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    color: #fff;
+  }
+  
+
+  
+  /* Footer */
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  footer .sci {
+    position: relative;
+    display: flex;
+  }
+  
+  footer .sci li {
+    list-style: none;
+  }
+  
+  footer .sci li a {
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  
+  footer .sci li a img {
+    filter: invert(1);
+    max-width: 40px;
+  }
+  
+  .copyrightText {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    text-align: center;
+  }
+  
+  .copyrightText a {
+    color: #fff;
+    text-decoration: #fff;
+  }
+  
+  /* End of Footer */
+  
+  
+  
+  .fea {
+    position: absolute;
+    width: 731px;
+    height: 39px;
+    background: #C4C4C4;
+    border: 1px solid white;
+    height: 39px;  
+    left: -430px;
+    top: -228px;
+    border-radius: 0px;
+  }
+  
+  .feaplaces {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .feaplaces h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .h1culture {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Source Serif Pro', serif;
+  
+  }
+  
+  .h1culture + p  {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Hina Mincho', serif;
+  }
+  
+
+  
+  @media screen and (max-width:900px){
+    .box{
+        flex: 100%;
+        max-width: 500px;
+    }
+  }

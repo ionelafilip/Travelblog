@@ -1,0 +1,268 @@
+main, footer {
+  background: #111;
+}
+
+/*---  Slider --- */
+
+.carousel-item {
+  height: 100vh;
+  background: center scroll;
+  background-size: cover;
+}
+
+
+.carousel-caption {
+  bottom: 180px;
+  padding-left:100px;
+  padding-right: 100px;
+  top: 30%;
+}
+
+.carousel-caption h2 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem; 
+}
+
+/* --- End od Slider --- */
+
+
+#fitimg {
+  height: 50vh;
+}
+
+
+
+.bgimage {
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgimage:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #111, transparent);
+}
+
+.bgimage:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: auto;
+  background: linear-gradient(to bottom, #111, transparent);
+}
+
+.bgimg {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+/* --- Cards --- */
+
+.card-body {
+  width: 100%;
+  height: 150px;
+}
+
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  transform: translate (-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  z-index: 1;
+  font-family: 'Dancing Script', cursive;
+}
+
+.wrapper h1 {
+  margin-bottom: 40px;
+  font-size: 42px;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .sci {
+  position: relative;
+  display: flex;
+}
+
+footer .sci li {
+  list-style: none;
+}
+
+footer .sci li a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+footer .sci li a img {
+  filter: invert(1);
+  max-width: 40px;
+}
+
+.copyrightText {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+}
+
+.copyrightText a {
+  color: #fff;
+  text-decoration: #fff;
+}
+
+/* End of Footer */
+
+
+/* Show less */
+
+.showLess {
+   display: none;
+}
+
+.toggle {
+  color: white;
+  margin-left: 5px;
+  background-color: rgba(130, 240, 225, 0.5);
+  border-radius: 7px;
+  padding: 0px 5px;
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+
+.alert {
+  margin: -9px 0 12px 0;
+  padding: 10px;
+  border-bottom: 5px;
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+
+.fea {
+  position: absolute;
+  width: 731px;
+  height: 39px;
+  background: #C4C4C4;
+  border: 1px solid white;
+  height: 39px;  
+  left: -430px;
+  top: -228px;
+  border-radius: 0px;
+}
+
+.feaplaces {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.feaplaces h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+
+.h1culture {
+  font-size: 100px;
+  font-weight: 600;
+  color: white;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Source Serif Pro', serif;
+
+}
+
+.h1culture + p  {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Hina Mincho', serif;
+  z-index: 1;
+}
+
+/* Culture page style */
+
+.culturecardtext {
+   font-size: 12px;
+}
+
+.culturecardimg {
+  width: 130px;
+  height: 280px;
+}
+
+.indiecard {
+  width: 150px;
+  height: 260px;
+}
+
+.philcard {
+  width: 300px;  
+  height: 200px;
+}
+
+.nabcard {
+  width: 110px;
+  height: 190px;
+}
+
+

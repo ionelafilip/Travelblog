@@ -1,0 +1,7 @@
+Options -Indexes
+
+RewriteEngine On 
+RewriteRule ^([\w]+)$ ?page=$1
+
+ ErrorDocument 404 /Travelblog/errors/error404.php
+ ErrorDocument 403 /Travelblog/errors/error403.php
